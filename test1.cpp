@@ -2,8 +2,8 @@
 double perimeterOfSquare(double a) {
     return 4 * a;
 }
-double areaOfSquare(double a) {
-    return a * a;
+double areaOfSquare(double value) {
+    return value * value;
 }
 int main() {
   double result = perimeterOfSquare(5.0);
