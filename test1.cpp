@@ -1,23 +1,9 @@
 #include <iostream>
-struct foo {
-    int value;
-};
-int operator+ (foo a, foo b) {
-    return 4;
+double perimeterOfSquare(double a) {
+    return 4 * a;
 }
-// 2+2
-// 2 sum 2
-// +2 2
-// sum 2 2
-// sum (2,2)
-// 2+2*2
-// +*2 2 2
-// sum(mul(2,2),2)
-// *+2 2 2
-// mul(sum(2,2),2)
 int main() {
-    foo a, b;
-    std::cout << a + b << std::endl;
-    std::cout << "Hello, World!" << std::endl;
+  double result = perimeterOfSquare(5.0);
+    std::cout << result << std::endl;
     return 0;
 }
