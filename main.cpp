@@ -1,7 +1,5 @@
 #include <iostream>
-double perimeterOfSquare(double a) {
-    return 4 * a;
-}
+#include "utils.h"
 
 int main() {
   double result = perimeterOfSquare(5.0);
