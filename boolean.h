@@ -71,13 +71,35 @@ bool boolean19(int a, int b, int c)
 {
     return (a == -b) || (a == -c) || (b == -c);
 }
-// bool boolean20(int n, int a, int b, int c )
-//{
-//    a = n / 100;
-//   b = (n / 10) % 10;
-//   c = n % 10;
-//  return a != b && a != c && b != c;
-//}
+bool boolean20(int n)
+{
+    int a = n / 100;
+    int b = (n / 10) % 10;
+    int c = n % 10;
+    return (a != b) && (a != c) && (b != c);
+}
+bool boolean21(int n)
+{
+    int a = n / 100;
+    int b = (n / 10) % 10;
+    int c = n % 10;
+    return (a < b) && (b < c);
+}
+bool boolean22(int n)
+{
+    int a = n / 100;
+    int b = (n / 10) % 10;
+    int c = n % 10;
+    return ((a < b) && (b < c)) || ((a > b) && (b > c));
+}
+bool boolean23(int n)
+{
+    int a = n / 1000;
+    int b = (n % 1000) / 100;
+    int c = (n / 100) % 10;
+    int d = n % 10;
+    return (a == d) && (b == c);
+}
 bool boolean24(double a, double b, double c)
 {
     double d = pow(b, 2) - 4 * a * c;
@@ -85,22 +107,29 @@ bool boolean24(double a, double b, double c)
 }
 bool boolean25(double x, double y)
 {
-   return x < 0 && y > 0;
-} 
+    return x < 0 && y > 0;
+}
 bool boolean26(double x, double y)
 {
-   return x > 0 && y < 0;
-} 
+    return x > 0 && y < 0;
+}
 bool boolean27(double x, double y)
 {
-    //y>0 для второй 
-    //y<0 для треетьей 
-   return x < 0;
-} 
+    // y>0 для второй
+    // y<0 для треетьей
+    return x < 0;
+}
 bool boolean28(double x, double y)
 {
-   return (x < 0 && y < 0) || (x > 0 and y > 0);
-} 
+    return (x < 0 && y < 0) || (x > 0 and y > 0);
+}
+bool boolean29(int x, int y, int x1, int y1, int x2, int y2)
+{
+    //(x >= x1 && x <= x2) - точка x внутри диапазона от x1 до x2
+    //(y >= y1 && y <= y2) - точка y внутри диапазона от y1 до y2
+    return (x >= x1 && x <= x2) && (y >= y1 && y <= y2);
+}
+
 bool boolean34(int x, int y)
 {
     return ((x + y) % 2 == 1);
