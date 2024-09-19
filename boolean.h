@@ -55,6 +55,10 @@ bool boolean14(int a, int b, int c)
 {
     return ((a >= 0) || (b >= 0) || (c >= 0)) == 1;
 }
+bool boolean15(int a, int b, int c)
+{
+    return (a > 0 && b > 0 && c <= 0) || (a > 0 && b <= 0 && c > 0) || (a <= 0 && b > 0 && c > 0);
+}
 bool boolean16(int a)
 {
     return a % 2 == 0 && a >= 10 && a <= 99;
@@ -129,7 +133,22 @@ bool boolean29(int x, int y, int x1, int y1, int x2, int y2)
     //(y >= y1 && y <= y2) - точка y внутри диапазона от y1 до y2
     return (x >= x1 && x <= x2) && (y >= y1 && y <= y2);
 }
-
+bool boolean30(int a, int b, int c)
+{
+    return (a == b) && (b == c);
+}
+bool boolean31(int a, int b, int c)
+{
+    return (a == b) || (a == c) || (b == c);
+}
+bool boolean32(int a, int b, int c)
+{
+    return (pow(a, 2) + pow(b, 2) == pow(c, 2)) || (pow(a, 2) + pow(c, 2) == pow(b, 2)) || (pow(b, 2) + pow(c, 2) == pow(a, 2));
+}
+bool boolean33(int a, int b, int c)
+{
+    return ((a + b) > c) && ((a + c) > b) && ((b + c) > a);
+}
 bool boolean34(int x, int y)
 {
     return ((x + y) % 2 == 1);
