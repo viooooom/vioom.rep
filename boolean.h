@@ -78,6 +78,29 @@ bool boolean19(int a, int b, int c)
 //   c = n % 10;
 //  return a != b && a != c && b != c;
 //}
+bool boolean24(double a, double b, double c)
+{
+    double d = pow(b, 2) - 4 * a * c;
+    return d >= 0;
+}
+bool boolean25(double x, double y)
+{
+   return x < 0 && y > 0;
+} 
+bool boolean26(double x, double y)
+{
+   return x > 0 && y < 0;
+} 
+bool boolean27(double x, double y)
+{
+    //y>0 для второй 
+    //y<0 для треетьей 
+   return x < 0;
+} 
+bool boolean28(double x, double y)
+{
+   return (x < 0 && y < 0) || (x > 0 and y > 0);
+} 
 bool boolean34(int x, int y)
 {
     return ((x + y) % 2 == 1);
@@ -88,7 +111,7 @@ bool boolean35(int x1, int y1, int x2, int y2)
 }
 bool boolean36(int x1, int y1, int x2, int y2)
 {
-    return (x1 == x2) || (y1 == y2) ;
+    return (x1 == x2) || (y1 == y2);
 }
 bool boolean37(int x1, int y1, int x2, int y2)
 {

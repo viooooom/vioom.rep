@@ -4,12 +4,10 @@
 
 int main()
 {
-    std::cout << boolean34(5,7) << std::endl;
-    std::cout << boolean35(5,7,6,8) << std::endl;
-    std::cout << boolean36(3,7,3,5) << std::endl;
-    std::cout << boolean37(3,7,3,5) << std::endl;
-    std::cout << boolean38(5,7,6,8) << std::endl;
-    std::cout << boolean39(3,7,3,5) << std::endl;
-    std::cout << boolean40(3,7,3,5) << std::endl;
+    std::cout << boolean24(1,2,-6) << std::endl;
+    std::cout << boolean25(1,2) << std::endl;
+    std::cout << boolean26(1,2) << std::endl;
+    std::cout << boolean27(1,2) << std::endl;
+    std::cout << boolean28(1,2) << std::endl;
     return 0;
 }
