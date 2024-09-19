@@ -15,3 +15,8 @@ bool boolean4(int a, int b)
 {
     return (a > 2) && (b <= 3);
 }
+
+bool boolean5(int a, int b)
+{
+    return (a >= 0) || (b < -2);
+}
