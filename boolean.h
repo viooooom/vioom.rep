@@ -94,3 +94,15 @@ bool boolean37(int x1, int y1, int x2, int y2)
 {
     return (abs(x2 - x1) <= 1) && (abs(y2 - y1) <= 1);
 }
+bool boolean38(int x1, int y1, int x2, int y2)
+{
+    return abs(x2 - x1) == abs(y2 - y1);
+}
+bool boolean39(int x1, int y1, int x2, int y2)
+{
+    return (abs(x2 - x1) == abs(y2 - y1)) || (x1 == x2) || (y1 == y2);
+}
+bool boolean40(int x1, int y1, int x2, int y2)
+{
+    return ((abs(x2 - x1) == 2 && abs(y2 - y1) == 1) || (abs(x2 - x1) == 1 && abs(y2 - y1) == 2));
+}
