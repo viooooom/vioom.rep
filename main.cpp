@@ -11,5 +11,7 @@ int main()
     std::cout << boolean5(5,67) << std::endl;
     std::cout << boolean6(5,-67,8) << std::endl;
     std::cout << boolean7(5,67,8) << std::endl;
+    std::cout << boolean8(5,67) << std::endl;
+    std::cout << boolean14(5,67,-7) << std::endl;
     return 0;
 }
