@@ -8,6 +8,18 @@ int ifs1(int a)
 }
 int ifs2(int a)
 {
+    if (a >= 0)
+    {
+        a += 1;
+    }
+    if (a < 0)
+    {
+        a -= 2;
+    }
+    return a;
+}
+int ifs3(int a)
+{
     if (a > 0)
     {
         a += 1;
