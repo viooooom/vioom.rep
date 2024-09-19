@@ -13,5 +13,8 @@ int main()
     std::cout << boolean7(5,67,8) << std::endl;
     std::cout << boolean8(5,67) << std::endl;
     std::cout << boolean14(5,67,-7) << std::endl;
+    std::cout << boolean18(5,0,0) << std::endl;
+    std::cout << boolean34(5,7) << std::endl;
+    std::cout << boolean35(5,7,6,8) << std::endl;
     return 0;
 }

@@ -63,3 +63,26 @@ bool boolean17(int a)
 {
     return a % 2 != 0 && a >= 100 && a <= 999;
 }
+bool boolean18(int a, int b, int c)
+{
+    return (a == b) || (a == c) || (b == c);
+}
+bool boolean19(int a, int b, int c)
+{
+    return (a == -b) || (a == -c) || (b == -c);
+}
+// bool boolean20(int n, int a, int b, int c )
+//{
+//    a = n / 100;
+//   b = (n / 10) % 10;
+//   c = n % 10;
+//  return a != b && a != c && b != c;
+//}
+bool boolean34(int x, int y)
+{
+    return ((x + y) % 2 == 1);
+}
+bool boolean35(int x1, int y1, int x2, int y2)
+{
+    return ((x1 + y1) % 2 == (x2 + y2) % 2);
+}
