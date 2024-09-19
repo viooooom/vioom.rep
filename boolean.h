@@ -20,3 +20,7 @@ bool boolean5(int a, int b)
 {
     return (a >= 0) || (b < -2);
 }
+bool boolean6(int a, int b, int c)
+{
+    return (a < b < c);
+}
