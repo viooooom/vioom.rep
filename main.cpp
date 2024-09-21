@@ -5,7 +5,6 @@
 
 int main() 
 {
-    ifs9(45,9);
-    ifs10(5,5);
+    ifs11(7,5);
     return 0;
 }
