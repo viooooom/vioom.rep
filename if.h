@@ -123,11 +123,34 @@ void ifs8(int a, int b)
         std::cout << "a == b" << std::endl;
     }
 }
-
-void ifs9(double a, double b) {
-    if (a > b) 
+void ifs9(double a, double b)
+{
+    if (a > b)
     {
-        
+        std::swap(a, b);
     }
+    else if (b > a)
+    {
+        std::swap(b, a);
+    }
+    else
+    {
+        std::cout << "a == b" << std::endl;
+    }
+    std::cout << a << " " << b << std::endl;
 }
+void ifs10(int a, int b)
+{
+    if (a != b)
+    {
+        a=a+b;  
+        b=a;
 
+    }
+    else 
+    {
+        a=0;
+        b=0;
+    }
+    std::cout << a << " " << b << std::endl;
+}

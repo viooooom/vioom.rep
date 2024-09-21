@@ -3,9 +3,9 @@
 #include "boolean.h"
 #include "if.h"
 
-int main()
+int main() 
 {
-    std::cout << ifs7(5, 5) << std::endl;
-    ifs8(6, 5);
+    ifs9(45,9);
+    ifs10(5,5);
     return 0;
 }
