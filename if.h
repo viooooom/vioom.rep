@@ -162,3 +162,34 @@ void ifs11(int a, int b)
     }
     std::cout << a << " " << b << std::endl;
 }
+void ifs12(int a, int b, int c)
+{
+    if (a < b && a < c)
+    {
+        std::cout << a << std::endl;
+    }
+    else if (b < a && b < c)
+    {
+        std::cout << b << std::endl;
+    }
+    else
+    {
+        std::cout << c << std::endl;
+    }
+}
+void ifs13(int a, int b, int c)
+{
+    if (a >= b && a <= c) {
+        std::cout << a << std::endl;
+    } else if (a >= c && a <= b) {
+        std::cout << a << std::endl;
+    } else if (b >= a && b <= c) {
+        std::cout << b << std::endl;
+    } else if (b >= c && b <= a) {
+        std::cout << b << std::endl;
+    } else if (c >= a && c <= b) {
+        std::cout << c << std::endl;
+    } else if (c >= b && c <= a) {
+        std::cout << c << std::endl;
+    }
+}
