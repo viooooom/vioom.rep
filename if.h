@@ -211,18 +211,119 @@ void ifs14(int a, int b, int c)
     {
         min = a;
         max = (b > c) ? b : c;
-        std::cout << min << " " << max << std::endl;
     }
     else if (b < a && b < c)
     {
         min = b;
         max = (a > c) ? a : c;
-        std::cout << min << " " << max << std::endl;
     }
     else
     {
         min = c;
         max = (a > b) ? a : b;
-        std::cout << min << " " << max << std::endl;
+    }
+    std::cout << min << " " << max << std::endl;
+}
+void ifs15(int a, int b, int c)
+{
+    int max1, max2, sum;
+
+    if (a >= b && a >= c)
+    {
+        max1 = a;
+        if (b >= c)
+        {
+            max2 = b;
+        }
+        else
+        {
+            max2 = c;
+        }
+        sum = max1 + max2;
+    }
+    else if (b >= a && b >= c)
+    {
+        max1 = b;
+        if (a >= c)
+        {
+            max2 = a;
+        }
+        else
+        {
+            max2 = c;
+        }
+        sum = max1 + max2;
+    }
+    else
+    {
+        max1 = c;
+        if (a >= b)
+        {
+            max2 = a;
+        }
+        else
+        {
+            max2 = b;
+        }
+        sum = max1 + max2;
+    }
+    std::cout << sum << std::endl;
+}
+void ifs16(double a, double b, double c)
+{
+    if (a <= b && b <= c)
+    {
+        a *= 2;
+        b *= 2;
+        c *= 2;
+    }
+    else
+    {
+        a = -a;
+        b = -b;
+        c = -c;
+    }
+    std::cout << a << " " << b << " " << c << std::endl;
+}
+void ifs17(double a, double b, double c)
+{
+    if ((a <= b && b <= c) || (a >= b && b >= c))
+    {
+        a *= 2;
+        b *= 2;
+        c *= 2;
+    }
+    else
+    {
+        a = -a;
+        b = -b;
+        c = -c;
+    }
+    std::cout << a << " " << b << " " << c << std::endl;
+}
+void ifs18(int a, int b, int c)
+{
+    int one = 1;
+    int two = 2;
+    int three = 3;
+    if (a == b && b == c)
+    {
+        std::cout << " Все числа равны " << std::endl;
+    }
+    else if (a == b)
+    {
+        std::cout << three << std::endl;
+    }
+    else if (a == c)
+    {
+        std::cout << two << std::endl;
+    }
+    else if (b == c)
+    {
+        std::cout << one << std::endl;
+    }
+    else
+    {
+        std::cout << " Нет чисел равных между собой" << std::endl;
     }
 }
