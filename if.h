@@ -179,17 +179,50 @@ void ifs12(int a, int b, int c)
 }
 void ifs13(int a, int b, int c)
 {
-    if (a >= b && a <= c) {
+    if (a >= b && a <= c)
+    {
         std::cout << a << std::endl;
-    } else if (a >= c && a <= b) {
+    }
+    else if (a >= c && a <= b)
+    {
         std::cout << a << std::endl;
-    } else if (b >= a && b <= c) {
+    }
+    else if (b >= a && b <= c)
+    {
         std::cout << b << std::endl;
-    } else if (b >= c && b <= a) {
+    }
+    else if (b >= c && b <= a)
+    {
         std::cout << b << std::endl;
-    } else if (c >= a && c <= b) {
+    }
+    else if (c >= a && c <= b)
+    {
         std::cout << c << std::endl;
-    } else if (c >= b && c <= a) {
+    }
+    else if (c >= b && c <= a)
+    {
         std::cout << c << std::endl;
+    }
+}
+void ifs14(int a, int b, int c)
+{
+    int min, max;
+    if (a < b && a < c)
+    {
+        min = a;
+        max = (b > c) ? b : c;
+        std::cout << min << " " << max << std::endl;
+    }
+    else if (b < a && b < c)
+    {
+        min = b;
+        max = (a > c) ? a : c;
+        std::cout << min << " " << max << std::endl;
+    }
+    else
+    {
+        min = c;
+        max = (a > b) ? a : b;
+        std::cout << min << " " << max << std::endl;
     }
 }
