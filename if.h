@@ -358,4 +358,44 @@ void ifs19(int a, int b, int c, int d)
         std::cout << "Нет решения" << std::endl;
     }
 }
-void ifs20
+void ifs20(double a, double b, double c)
+{
+    double dist_ab = abs(a - b);
+    double dist_ac = abs(a - c);
+
+    if (dist_ab < dist_ac)
+    {
+        std::cout << "Точка b ближе к точке a. Расстояние: " << dist_ab << std::endl;
+    }
+    else if (dist_ac < dist_ab)
+    {
+        std::cout << "Точка c ближе к точке a. Расстояние: " << dist_ac << std::endl;
+    }
+    else
+    {
+        std::cout << "Точки b и c находятся на одинаковом расстоянии от точки a." << std::endl;
+    }
+}
+void ifs21(int x, int y)
+{
+    int zero = 0;
+    int one = 1;
+    int two = 2;
+    int tree = 3;
+    if (x == 0 && y == 0)
+    {
+        std::cout << zero << std::endl;
+    }
+    else if (x == 0 && y != 0)
+    {
+        std::cout << one << std::endl;
+    }
+    else if (x != 0 && y == 0)
+    {
+        std::cout << two << std::endl;
+    }
+    else
+    {
+        std::cout << tree << std::endl;
+    }
+}
