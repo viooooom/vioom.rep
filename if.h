@@ -327,3 +327,35 @@ void ifs18(int a, int b, int c)
         std::cout << " Нет чисел равных между собой" << std::endl;
     }
 }
+void ifs19(int a, int b, int c, int d)
+{
+    int one = 1;
+    int two = 2;
+    int three = 3;
+    int four = 4;
+    if (a == b && a == c && a == d)
+    {
+        std::cout << "Все числа равны" << std::endl;
+    }
+    else if (a != b && a != c && a != d)
+    {
+        std::cout << one << std::endl;
+    }
+    else if (b != a && b != c && b != d)
+    {
+        std::cout << two << std::endl;
+    }
+    else if (c != a && c != b && c != d)
+    {
+        std::cout << three << std::endl;
+    }
+    else if (d != a && d != b && d != c)
+    {
+        std::cout << four << std::endl;
+    }
+    else
+    {
+        std::cout << "Нет решения" << std::endl;
+    }
+}
+void ifs20
