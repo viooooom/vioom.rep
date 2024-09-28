@@ -250,7 +250,8 @@ void ifs15(int a, int b, int c)
         sum = max1 + max2;
     }
     std::cout << sum << std::endl;
-}void ifs16(double a, double b, double c)
+}
+void ifs16(double a, double b, double c)
 {
     if (a <= b && b <= c)
     {
@@ -284,24 +285,21 @@ void ifs17(double a, double b, double c)
 }
 void ifs18(int a, int b, int c)
 {
-    int one = 1;
-    int two = 2;
-    int three = 3;
     if (a == b && b == c)
     {
         std::cout << " Все числа равны " << std::endl;
     }
     else if (a == b)
     {
-        std::cout << three << std::endl;
+        std::cout << 3 << std::endl;
     }
     else if (a == c)
     {
-        std::cout << two << std::endl;
+        std::cout << 2 << std::endl;
     }
     else if (b == c)
     {
-        std::cout << one << std::endl;
+        std::cout << 1 << std::endl;
     }
     else
     {
@@ -310,29 +308,25 @@ void ifs18(int a, int b, int c)
 }
 void ifs19(int a, int b, int c, int d)
 {
-    int one = 1;
-    int two = 2;
-    int three = 3;
-    int four = 4;
     if (a == b && a == c && a == d)
     {
         std::cout << "Все числа равны" << std::endl;
     }
     else if (a != b && a != c && a != d)
     {
-        std::cout << one << std::endl;
+        std::cout << 1 << std::endl;
     }
     else if (b != a && b != c && b != d)
     {
-        std::cout << two << std::endl;
+        std::cout << 2 << std::endl;
     }
     else if (c != a && c != b && c != d)
     {
-        std::cout << three << std::endl;
+        std::cout << 3 << std::endl;
     }
     else if (d != a && d != b && d != c)
     {
-        std::cout << four << std::endl;
+        std::cout << 4 << std::endl;
     }
     else
     {
@@ -433,4 +427,110 @@ int max(int a, int b, int c)
 int max(int a, int b, int c, int d)
 {
     return max2(max2(a, b), max2(c, d));
+}
+void ifs24(double x)
+{
+    double f;
+    if (x > 0)
+    {
+        f = 2 * sin(x);
+    }
+    else
+    {
+        f = 6 - x;
+    }
+    std::cout << f << std::endl;
+}
+void ifs25(double x)
+{
+    double f;
+    if (x < -2 || x > 2)
+    {
+        f = 2 * x;
+    }
+    else
+    {
+        f = -3 * x;
+    }
+    std::cout << f << std::endl;
+}
+void ifs26(double x)
+{
+    double f;
+    if (x <= 0)
+    {
+        f = -x;
+    }
+    else if (0 < x < 2)
+    {
+        f = x * x;
+    }
+    else
+    {
+        f = 4;
+    }
+    std::cout << f << std::endl;
+}
+int ifs27(double x)
+{
+    if (x < 0)
+        return 0;
+    int n = static_cast<int>(x); // уточнить
+    return (n % 2 == 0) ? 1 : -1;
+}
+void ifs28(int x)
+{
+    int a = 365;
+    int b = 366;
+    if (x % 4 == 0)
+    {
+        if (x % 100 == 0)
+        {
+            if (x % 400 == 0)
+            {
+                std::cout << a << std::endl;
+            }
+            else
+            {
+                std::cout << b << std::endl;
+            }
+        }
+        else
+        {
+            std::cout << a << std::endl;
+        }
+    }
+}
+std::string ifs29(int x)
+{
+    std::string sign = (x < 0) ? "отрицательное" : "положительное";
+    if (x == 0)
+        sign = "нулевое";
+    std::string parity = (x % 2 == 0) ? "четное" : "нечетное";
+    return sign + " " + parity + " число";
+}
+std::string ifs30(int x)
+{
+    std::string result;
+    if (x < 10)
+    {
+        result = "однозначное";
+    }
+    else if (x < 100)
+    {
+        result = "двузначное";
+    }
+    else
+    {
+        result = "трехзначное";
+    }
+    if (x % 2 == 0)
+    {
+        result = "четное " + result + " число";
+    }
+    else
+    {
+        result = "нечетное " + result + " число";
+    }
+    return result;
 }
