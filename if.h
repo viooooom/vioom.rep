@@ -11,11 +11,9 @@ int ifs2(int a)
     if (a >= 0)
     {
         a += 1;
+        return a;
     }
-    if (a < 0)
-    {
-        a -= 2;
-    }
+    a -= 2;
     return a;
 }
 int ifs3(int a)
@@ -23,33 +21,36 @@ int ifs3(int a)
     if (a > 0)
     {
         a += 1;
+        return a;
     }
     if (a < 0)
     {
         a -= 2;
+        return a;
     }
-    if (a == 0)
-    {
-        a += 10;
-    }
+    a += 10;
     return a;
 }
 int ifs4(int a, int b, int c)
 {
-    int count = 0;
+    int positiveCount = 0;
+
     if (a > 0)
     {
-        count++;
+        positiveCount++;
     }
+
     if (b > 0)
     {
-        count++;
+        positiveCount++;
     }
+
     if (c > 0)
     {
-        count++;
+        positiveCount++;
     }
-    return count;
+
+    return positiveCount;
 }
 int ifs5(int a, int b, int c)
 {
@@ -88,10 +89,7 @@ int ifs6(int a, int b)
     {
         return a;
     }
-    else
-    {
-        return b;
-    }
+    return b;
 }
 int ifs7(int a, int b)
 {
@@ -108,20 +106,24 @@ int ifs7(int a, int b)
         return 0;
     }
 }
+int test(int a)
+{
+    int result = 0;
+    if (a % 2 == 0)
+    {
+        result += 1;
+        return result;
+    }
+    result += 2;
+    return result;
+}
 void ifs8(int a, int b)
 {
     if (a > b)
     {
-        std::cout << a << ' ' << b << std::endl;
+        std::swap(a, b);
     }
-    else if (b > a)
-    {
-        std::cout << b << ' ' << a << std::endl;
-    }
-    else
-    {
-        std::cout << "a == b" << std::endl;
-    }
+    std::cout << a << ' ' << b << std::endl;
 }
 void ifs9(double a, double b)
 {
@@ -160,69 +162,49 @@ void ifs11(int a, int b)
         a = 0;
         b = 0;
     }
-    std::cout << a << " " << b << std::endl;
+    std::cout << a << ' ' << b << std::endl;
 }
 void ifs12(int a, int b, int c)
 {
-    if (a < b && a < c)
+    int smallest = std::min({a, b, c});
+    std::cout << smallest << std::endl;
+}
+void ifs13(int asmallest, int bmiddle, int clargest)
+{
+    if (asmallest >= bmiddle && asmallest <= clargest)
     {
-        std::cout << a << std::endl;
+        std::cout << asmallest << std::endl;
     }
-    else if (b < a && b < c)
+    else if (bmiddle >= asmallest && bmiddle <= clargest)
     {
-        std::cout << b << std::endl;
+        std::cout << bmiddle << std::endl;
     }
     else
     {
-        std::cout << c << std::endl;
-    }
-}
-void ifs13(int a, int b, int c)
-{
-    if (a >= b && a <= c)
-    {
-        std::cout << a << std::endl;
-    }
-    else if (a >= c && a <= b)
-    {
-        std::cout << a << std::endl;
-    }
-    else if (b >= a && b <= c)
-    {
-        std::cout << b << std::endl;
-    }
-    else if (b >= c && b <= a)
-    {
-        std::cout << b << std::endl;
-    }
-    else if (c >= a && c <= b)
-    {
-        std::cout << c << std::endl;
-    }
-    else if (c >= b && c <= a)
-    {
-        std::cout << c << std::endl;
+        std::cout << clargest << std::endl;
     }
 }
 void ifs14(int a, int b, int c)
 {
     int min, max;
+
     if (a < b && a < c)
     {
         min = a;
-        max = (b > c) ? b : c;
+        max = std::max(b, c);
     }
     else if (b < a && b < c)
     {
         min = b;
-        max = (a > c) ? a : c;
+        max = std::max(a, c);
     }
     else
     {
         min = c;
-        max = (a > b) ? a : b;
+        max = std::max(a, b);
     }
-    std::cout << min << " " << max << std::endl;
+
+    std::cout << min << ' ' << max << std::endl;
 }
 void ifs15(int a, int b, int c)
 {
@@ -268,8 +250,7 @@ void ifs15(int a, int b, int c)
         sum = max1 + max2;
     }
     std::cout << sum << std::endl;
-}
-void ifs16(double a, double b, double c)
+}void ifs16(double a, double b, double c)
 {
     if (a <= b && b <= c)
     {
@@ -398,4 +379,58 @@ void ifs21(int x, int y)
     {
         std::cout << tree << std::endl;
     }
+}
+void ifs22(int x, int y)
+{
+    if (x > 0 && y > 0)
+    {
+        std::cout << "Точка находится в I четверти." << std::endl;
+    }
+    else if (x < 0 && y > 0)
+    {
+        std::cout << "Точка находится во II четверти." << std::endl;
+    }
+    else if (x < 0 && y < 0)
+    {
+        std::cout << "Точка находится в III четверти." << std::endl;
+    }
+    else
+    {
+        std::cout << "Точка находится в IV четверти." << std::endl;
+    }
+}
+void ifs23(int x1, int x2, int x3, int y1, int y2, int y3)
+{
+    if (x1 == x2 && y1 == y3)
+    {
+        std::cout << "(" << x3 << ", " << y2 << ")" << std::endl;
+    }
+    else if (x1 == x3 && y1 == y2)
+    {
+        std::cout << "(" << x2 << ", " << y3 << ")" << std::endl;
+    }
+    else if (x2 == x3 && y2 == y1)
+    {
+        std::cout << "(" << x1 << ", " << y3 << ")" << std::endl;
+    }
+    else
+    {
+        std::cout << "Невозможно найти координаты вершины. " << std::endl;
+    }
+}
+int max2(int a, int b)
+{
+    if (a > b)
+    {
+        return a;
+    }
+    return b;
+}
+int max(int a, int b, int c)
+{
+    return max2(a, max2(b, c));
+}
+int max(int a, int b, int c, int d)
+{
+    return max2(max2(a, b), max2(c, d));
 }
