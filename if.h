@@ -106,17 +106,17 @@ int ifs7(int a, int b)
         return 0;
     }
 }
-int test(int a)
-{
-    int result = 0;
-    if (a % 2 == 0)
-    {
-        result += 1;
-        return result;
-    }
-    result += 2;
-    return result;
-}
+//int test(int a)
+//{
+//    int result = 0;
+//    if (a % 2 == 0)
+//    {
+//        result += 1;
+//        return result;
+//    }
+//    result += 2;
+//    return result;
+//}
 void ifs8(int a, int b)
 {
     if (a > b)
@@ -166,7 +166,7 @@ void ifs11(int a, int b)
 }
 void ifs12(int a, int b, int c)
 {
-    int smallest = std::min({a, b, c});
+    int smallest = std::min(a, std::min(b, c));
     std::cout << smallest << std::endl;
 }
 void ifs13(int asmallest, int bmiddle, int clargest)
@@ -353,25 +353,21 @@ void ifs20(double a, double b, double c)
 }
 void ifs21(int x, int y)
 {
-    int zero = 0;
-    int one = 1;
-    int two = 2;
-    int tree = 3;
     if (x == 0 && y == 0)
     {
-        std::cout << zero << std::endl;
+        std::cout << 0 << std::endl;
     }
     else if (x == 0 && y != 0)
     {
-        std::cout << one << std::endl;
+        std::cout << 1 << std::endl;
     }
     else if (x != 0 && y == 0)
     {
-        std::cout << two << std::endl;
+        std::cout << 2 << std::endl;
     }
     else
     {
-        std::cout << tree << std::endl;
+        std::cout << 3 << std::endl;
     }
 }
 void ifs22(int x, int y)
@@ -412,22 +408,22 @@ void ifs23(int x1, int x2, int x3, int y1, int y2, int y3)
         std::cout << "Невозможно найти координаты вершины. " << std::endl;
     }
 }
-int max2(int a, int b)
-{
-    if (a > b)
-    {
-        return a;
-    }
-    return b;
-}
-int max(int a, int b, int c)
-{
-    return max2(a, max2(b, c));
-}
-int max(int a, int b, int c, int d)
-{
-    return max2(max2(a, b), max2(c, d));
-}
+//int max2(int a, int b)
+//{
+//    if (a > b)
+//    {
+//        return a;
+//    }
+//   return b;
+//}
+//int max(int a, int b, int c)
+//{
+//    return max2(a, max2(b, c));
+//}
+//int max(int a, int b, int c, int d)
+//{
+//    return max2(max2(a, b), max2(c, d));
+//}
 void ifs24(double x)
 {
     double f;
@@ -461,7 +457,7 @@ void ifs26(double x)
     {
         f = -x;
     }
-    else if (0 < x < 2)
+    else if (0 < x && x < 2)
     {
         f = x * x;
     }
@@ -471,12 +467,17 @@ void ifs26(double x)
     }
     std::cout << f << std::endl;
 }
-int ifs27(double x)
+void ifs27(double x)
 {
     if (x < 0)
-        return 0;
-    int n = static_cast<int>(x); // уточнить
-    return (n % 2 == 0) ? 1 : -1;
+        std::cout << 0 << std::endl;
+    int n = static_cast<int>(x);
+    if (n != x)
+    {
+        std::cout << -1 << std::endl;
+    }
+    double y = (n % 2 == 0) ? 1 : -1;
+    std::cout << y << std::endl;
 }
 void ifs28(int x)
 {
@@ -500,6 +501,7 @@ void ifs28(int x)
             std::cout << a << std::endl;
         }
     }
+    std::cout << 0 << std::endl;
 }
 std::string ifs29(int x)
 {
@@ -507,6 +509,7 @@ std::string ifs29(int x)
     if (x == 0)
         sign = "нулевое";
     std::string parity = (x % 2 == 0) ? "четное" : "нечетное";
+    std::cout << sign + " " + parity + " число" << std::endl;
     return sign + " " + parity + " число";
 }
 std::string ifs30(int x)
@@ -532,5 +535,6 @@ std::string ifs30(int x)
     {
         result = "нечетное " + result + " число";
     }
+    std::cout << result << std::endl;
     return result;
 }
