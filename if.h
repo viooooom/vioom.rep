@@ -106,17 +106,17 @@ int ifs7(int a, int b)
         return 0;
     }
 }
-//int test(int a)
+// int test(int a)
 //{
-//    int result = 0;
-//    if (a % 2 == 0)
-//    {
-//        result += 1;
-//        return result;
-//    }
-//    result += 2;
-//    return result;
-//}
+//     int result = 0;
+//     if (a % 2 == 0)
+//     {
+//         result += 1;
+//         return result;
+//     }
+//     result += 2;
+//     return result;
+// }
 void ifs8(int a, int b)
 {
     if (a > b)
@@ -408,22 +408,22 @@ void ifs23(int x1, int x2, int x3, int y1, int y2, int y3)
         std::cout << "Невозможно найти координаты вершины. " << std::endl;
     }
 }
-//int max2(int a, int b)
+// int max2(int a, int b)
 //{
-//    if (a > b)
-//    {
-//        return a;
-//    }
-//   return b;
-//}
-//int max(int a, int b, int c)
+//     if (a > b)
+//     {
+//         return a;
+//     }
+//    return b;
+// }
+// int max(int a, int b, int c)
 //{
-//    return max2(a, max2(b, c));
-//}
-//int max(int a, int b, int c, int d)
+//     return max2(a, max2(b, c));
+// }
+// int max(int a, int b, int c, int d)
 //{
-//    return max2(max2(a, b), max2(c, d));
-//}
+//     return max2(max2(a, b), max2(c, d));
+// }
 void ifs24(double x)
 {
     double f;
