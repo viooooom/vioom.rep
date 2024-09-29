@@ -224,3 +224,71 @@ void begin33(double x, double a, double y)
     double kgy = kg1 * y;
     std::cout << kgy << " " << kg1 << std::endl;
 }
+void begin34(double x, double y, double a, double b)
+{
+    double kg1choc = a / x;
+    double kg1iris = b / y;
+    double diff = kg1choc / kg1iris;
+    std::cout << kg1choc << " " << kg1iris << " " << diff << std::endl;
+}
+int begin35(double v, double u, double t1, double t2)
+{
+    double s1 = v * t1;
+    double s2 = (v - u) * t2;
+    double s = s1 + s2;
+    return s;
+}
+int begin36(double v1, double v2, double s, double t)
+{
+    double s1 = s + (v2 + v1) * t;
+    return s1;
+}
+
+int begin37(double v1, double v2, double s, double t)
+{
+    double s1 = std::abs(s - (v2 - v1) * t);
+    return s1;
+}
+int begin38(double a, double b)
+{
+    if (a != 0)
+    {
+        double x = -b / a;
+        std::cout << x << std::endl;
+    }
+    else
+    {
+        std::cout << "Нет решения" << std::endl;
+    }
+    return 0;
+}
+int begin39(double a, double b, double c, double d)
+{
+    d = b * b - 4 * a * c;
+    if (d > 0)
+    {
+        double x1 = (-b + sqrt(d)) / (2 * a);
+        double x2 = (-b - sqrt(d)) / (2 * a);
+        std::cout << x1 << " " << x2 << std::endl;
+    }
+    else
+    {
+        std::cout << "Нет решения" << std::endl;
+    }
+    return 0;
+}
+int begin40(double a1, double b1, double c1, double a2, double b2, double c2)
+{
+    double d = a1 * b2 - a2 * b1;
+    if (d != 0)
+    {
+        double x = (c1 * b2 - c2 * b1) / d;
+        double y = (a1 * c2 - a2 * c1) / d;
+        std::cout << x << " " << y << std::endl;
+    }
+    else
+    {
+        std::cout << "Нет решения" << std::endl;
+    }
+    return 0;
+}
