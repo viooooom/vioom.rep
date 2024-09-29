@@ -205,13 +205,15 @@ int integer28(int k, int n)
     return (k - 1) % 7 + n;
 }
 
-int integer29(int a, int b, int c) {
-  int x1 = (a / c) * (b / c);
-  int x2 = (a*b) - x1 * (c*c);
-  std::cout << x1 << " " << x2 << std::endl;
-  return 0;
+int integer29(int a, int b, int c)
+{
+    int x1 = (a / c) * (b / c);
+    int x2 = (a * b) - x1 * (c * c);
+    std::cout << x1 << " " << x2 << std::endl;
+    return 0;
 }
 
-int integer30(int a) {
-  return (a + 99) / 100;
+int integer30(int a)
+{
+    return (a + 99) / 100;
 }
