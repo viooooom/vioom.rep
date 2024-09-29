@@ -262,7 +262,7 @@ int begin38(double a, double b)
     }
     return 0;
 }
-int begin39(double a, double b, double c, double d)
+int begin39(double a, double b, double c, double d, double x1, double x2)
 {
     d = b * b - 4 * a * c;
     if (d > 0)

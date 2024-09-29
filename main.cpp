@@ -4,6 +4,8 @@
 #include "boolean.h"
 #include "if.h"
 #include "begin.h"
+#include "integer.h"
+using namespace std;
 
 int main() 
 {
