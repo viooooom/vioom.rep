@@ -49,7 +49,6 @@ int ifs4(int a, int b, int c)
     {
         positiveCount++;
     }
-
     return positiveCount;
 }
 int ifs5(int a, int b, int c)
@@ -101,10 +100,7 @@ int ifs7(int a, int b)
     {
         return 2;
     }
-    else
-    {
-        return 0;
-    }
+    return 0;
 }
 // int test(int a)
 //{
@@ -143,11 +139,8 @@ void ifs10(int a, int b)
         a = a + b;
         b = a;
     }
-    else
-    {
-        a = 0;
-        b = 0;
-    }
+    a = 0;
+    b = 0;
     std::cout << a << " " << b << std::endl;
 }
 void ifs11(int a, int b)
@@ -157,11 +150,9 @@ void ifs11(int a, int b)
         a = std::max(a, b);
         b = a;
     }
-    else
-    {
-        a = 0;
-        b = 0;
-    }
+    a = 0;
+    b = 0;
+
     std::cout << a << ' ' << b << std::endl;
 }
 void ifs12(int a, int b, int c)
@@ -179,10 +170,7 @@ void ifs13(int asmallest, int bmiddle, int clargest)
     {
         std::cout << bmiddle << std::endl;
     }
-    else
-    {
-        std::cout << clargest << std::endl;
-    }
+    std::cout << clargest << std::endl;
 }
 void ifs14(int a, int b, int c)
 {
@@ -198,12 +186,8 @@ void ifs14(int a, int b, int c)
         min = b;
         max = std::max(a, c);
     }
-    else
-    {
-        min = c;
-        max = std::max(a, b);
-    }
-
+    min = c;
+    max = std::max(a, b);
     std::cout << min << ' ' << max << std::endl;
 }
 void ifs15(int a, int b, int c)
@@ -236,19 +220,16 @@ void ifs15(int a, int b, int c)
         }
         sum = max1 + max2;
     }
+    max1 = c;
+    if (a >= b)
+    {
+        max2 = a;
+    }
     else
     {
-        max1 = c;
-        if (a >= b)
-        {
-            max2 = a;
-        }
-        else
-        {
-            max2 = b;
-        }
-        sum = max1 + max2;
+        max2 = b;
     }
+    sum = max1 + max2;
     std::cout << sum << std::endl;
 }
 void ifs16(double a, double b, double c)
@@ -301,10 +282,7 @@ void ifs18(int a, int b, int c)
     {
         std::cout << 1 << std::endl;
     }
-    else
-    {
-        std::cout << " Нет чисел равных между собой" << std::endl;
-    }
+    std::cout << " Нет чисел равных между собой" << std::endl;
 }
 void ifs19(int a, int b, int c, int d)
 {
@@ -328,10 +306,7 @@ void ifs19(int a, int b, int c, int d)
     {
         std::cout << 4 << std::endl;
     }
-    else
-    {
-        std::cout << "Нет решения" << std::endl;
-    }
+    std::cout << "Нет решения" << std::endl;
 }
 void ifs20(double a, double b, double c)
 {
@@ -346,10 +321,7 @@ void ifs20(double a, double b, double c)
     {
         std::cout << "Точка c ближе к точке a. Расстояние: " << dist_ac << std::endl;
     }
-    else
-    {
-        std::cout << "Точки b и c находятся на одинаковом расстоянии от точки a." << std::endl;
-    }
+    std::cout << "Точки b и c находятся на одинаковом расстоянии от точки a." << std::endl;
 }
 void ifs21(int x, int y)
 {
@@ -365,10 +337,7 @@ void ifs21(int x, int y)
     {
         std::cout << 2 << std::endl;
     }
-    else
-    {
-        std::cout << 3 << std::endl;
-    }
+    std::cout << 3 << std::endl;
 }
 void ifs22(int x, int y)
 {
@@ -384,10 +353,7 @@ void ifs22(int x, int y)
     {
         std::cout << "Точка находится в III четверти." << std::endl;
     }
-    else
-    {
-        std::cout << "Точка находится в IV четверти." << std::endl;
-    }
+    std::cout << "Точка находится в IV четверти." << std::endl;
 }
 void ifs23(int x1, int x2, int x3, int y1, int y2, int y3)
 {
@@ -403,10 +369,7 @@ void ifs23(int x1, int x2, int x3, int y1, int y2, int y3)
     {
         std::cout << "(" << x1 << ", " << y3 << ")" << std::endl;
     }
-    else
-    {
-        std::cout << "Невозможно найти координаты вершины. " << std::endl;
-    }
+    std::cout << "Невозможно найти координаты вершины. " << std::endl;
 }
 // int max2(int a, int b)
 //{
@@ -444,10 +407,7 @@ void ifs25(double x)
     {
         f = 2 * x;
     }
-    else
-    {
-        f = -3 * x;
-    }
+    f = -3 * x;
     std::cout << f << std::endl;
 }
 void ifs26(double x)
@@ -461,10 +421,7 @@ void ifs26(double x)
     {
         f = x * x;
     }
-    else
-    {
-        f = 4;
-    }
+    f = 4;
     std::cout << f << std::endl;
 }
 void ifs27(double x)

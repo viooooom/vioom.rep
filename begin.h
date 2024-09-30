@@ -3,13 +3,11 @@
 using namespace std;
 int begin1(double a)
 {
-    double p = 4 * a;
-    return p;
+    return 4 * a;
 }
 int begin2(double a)
 {
-    double s = a * a;
-    return s;
+    return a * a;
 }
 void begin3(double a, double b)
 {
@@ -19,9 +17,7 @@ void begin3(double a, double b)
 }
 int begin4(double d)
 {
-    const double pi = 3.14;
-    double l = pi * d;
-    return l;
+    return 3.14 * d;
 }
 void begin5(double a)
 {
@@ -44,8 +40,7 @@ void begin7(double r)
 }
 int begin8(double a, double b)
 {
-    double c = (a + b) / 2;
-    return c;
+    return (a + b) / 2;
 }
 int begin9(double a, double b)
 {
@@ -108,8 +103,7 @@ void begin15(double s)
 }
 int begin16(double x1, double x2)
 {
-    double c = std::abs(x1 - x2);
-    return c;
+    return std::abs(x1 - x2);
 }
 void begin17(double a, double b, double c)
 {
@@ -138,8 +132,7 @@ void begin19(double x1, double y1, double x2, double y2)
 }
 int begin20(double x1, double y1, double x2, double y2)
 {
-    double s = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
-    return s;
+    return sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
 }
 void begin21(double x1, double y1, double x2, double y2, double x3, double y3)
 {
@@ -172,13 +165,11 @@ void begin24(double a, double b, double c)
 }
 int begin25(double x)
 {
-    double y = 3 * pow(x, 6) - 6 * pow(x, 2) - 7;
-    return y;
+    return 3 * pow(x, 6) - 6 * pow(x, 2) - 7;
 }
 int begin26(double x)
 {
-    double y = 4 * pow((x - 3), 6) - 7 * pow((x - 3), 3) + 2;
-    return y;
+    return 4 * pow((x - 3), 6) - 7 * pow((x - 3), 3) + 2;
 }
 void begin27(double a)
 {
@@ -196,27 +187,21 @@ void begin28(double a)
     double a15 = a10 * a5;
     std::cout << a << " " << a2 << " " << a3 << " " << a5 << " " << a10 << " " << a15 << std::endl;
 }
-void bogin29(double a_grad)
+int bogin29(double a_grad)
 {
-    const double pi = 3.14;
-    double a_rad = a_grad * pi / 180;
-    std::cout << a_rad << std::endl;
+    return a_grad * 3.14 / 180;
 }
-void begin30(double a_rad)
+int begin30(double a_rad)
 {
-    const double pi = 3.14;
-    double a_grad = a_rad * 180 / pi;
-    std::cout << a_grad << std::endl;
+    return a_rad * 180 / 3.14;
 }
 int begin31(double tf)
 {
-    double tc = (tf - 32) * 5 / 9;
-    return tc;
+    return (tf - 32) * 5 / 9;
 }
 int begin32(double tc)
 {
-    double tf = tc * 9 / 5 + 32;
-    return tf;
+    return tc * 9 / 5 + 32;
 }
 void begin33(double x, double a, double y)
 {
@@ -240,14 +225,12 @@ int begin35(double v, double u, double t1, double t2)
 }
 int begin36(double v1, double v2, double s, double t)
 {
-    double s1 = s + (v2 + v1) * t;
-    return s1;
+    return s + (v2 + v1) * t;
 }
 
 int begin37(double v1, double v2, double s, double t)
 {
-    double s1 = std::abs(s - (v2 - v1) * t);
-    return s1;
+    return std::abs(s - (v2 - v1) * t);
 }
 int begin38(double a, double b)
 {

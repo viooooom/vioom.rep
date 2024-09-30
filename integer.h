@@ -3,18 +3,15 @@
 using namespace std;
 int integer1(int l1)
 {
-    int l2 = l1 / 100;
-    return l2;
+    return l1 / 100;
 }
 int integer2(int m1)
 {
-    int m2 = m1 / 1000;
-    return m2;
+    return m1 / 1000;
 }
 int integer3(int byte)
 {
-    int kbyte = byte / 1024;
-    return kbyte;
+    return byte / 1024;
 }
 int integer4(int a, int b)
 {
@@ -131,67 +128,55 @@ int integer16(int a)
 }
 int integer17(int a)
 {
-    int hund = (a / 100) % 10;
-    return hund;
+    return (a / 100) % 10;
 }
 int integer18(int a)
 {
-    int thousands = a / 1000;
-    return thousands;
+    return a / 1000;
 }
 int integer19(int n)
 {
-    int minutes = n / 60;
-    return minutes;
+    return n / 60;
 }
 int integer20(int n)
 {
-    int hours = n / 3600;
-    return hours;
+    return n / 3600;
 }
 int integer21(int n)
 {
-    int sec_in_last_min = n % 60;
-    return sec_in_last_min;
+    return n % 60;
 }
 int integer22(int n)
 {
-    int sec_in_last_hour = n % 3600;
-    return sec_in_last_hour;
+    return n % 3600;
 }
 int integer23(int n)
 {
-    int min_in_last_hour = (n % 3600) / 60;
-    return min_in_last_hour;
+    return (n % 3600) / 60;
 }
 int integer24(int k)
 {
-    int dofw = ((k - 1) % 7 + 1) % 7;
-    return dofw;
+    return ((k - 1) % 7 + 1) % 7;
 }
 
 int integer25(int k)
 {
-    int dowf = ((k - 1) % 7 + 3) % 7;
-    return dowf;
+    return ((k - 1) % 7 + 3) % 7;
 }
 
 int integer26(int k)
 {
-    int dowf = (((k - 1) % 7 + 1) % 7 + 1);
-    return dowf;
+    return (((k - 1) % 7 + 1) % 7 + 1);
 }
 
 int integer27(int k)
 {
-    int dowf = ((k + 1) % 7) + 1;
-    return dowf;
+    return ((k + 1) % 7) + 1;
 }
 
 int integer28(int k, int n)
 {
-    int dowf = ((k - 1 + n - 1) % 7) + 1;
-    return dowf;
+    return ((k - 1 + n - 1) % 7) + 1;
 }
 
 int integer29(int a, int b, int c)
@@ -204,6 +189,5 @@ int integer29(int a, int b, int c)
 
 int integer30(int a)
 {
-    int century = (a + 99) / 100;
-    return century;
+    return (a + 99) / 100;
 }
