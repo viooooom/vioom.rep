@@ -96,7 +96,7 @@ void begin15(double s)
 {
     const double pi = 3.14;
     double l = 2 * pi * s;
-    double s = pi * s * s;
+    double area = pi * s * s;
     double r = sqrt(s / pi);
     double d = 2 * r;
     std::cout << l << " " << r << " " << d << std::endl;

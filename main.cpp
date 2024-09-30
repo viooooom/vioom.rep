@@ -5,12 +5,11 @@
 #include "if.h"
 #include "begin.h"
 #include "integer.h"
+#include "book_A1.h"
 using namespace std;
 
-int main() 
+int main()
 {
-    begin1(4);
-    begin2(4);
-    begin3(4, 5);
+    task12(1765);
     return 0;
 }
